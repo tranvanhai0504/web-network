@@ -422,8 +422,63 @@ ul{
     align-items: center;
     text-decoration: none;
     }
+    .toab-about {
+        position: absolute;
+        top: 24px;
+        left: 24px;
+        display: block;
+        width: 300px;
+        background-color:rgba(244, 45, 45, 0.8);
+        padding: 12px;
+        border-radius: 2px;
+        color: #e84e3d;
+    
+    }
 }
 
+
+/* b building */
+
+.body-toab {
+    margin-bottom: -5px;
+}
+.img-b-building {
+    width: 100%;
+}
+
+.back-img {
+    position: relative;
+}
+
+.img-content {
+    position: absolute;
+    top: 12%;
+    left: 24px;
+}
+
+.img-content img {
+    width: 100%;
+    border-radius: 2px;
+    height: 100%;
+
+}
+.meothongthai{
+    width: 100%;
+}
+.toab-about {
+    display: block;
+    position: absolute;
+    top: 126px;
+    left: 218px;
+    width: 300px;
+    background-color:rgba(244, 236, 236, 0.8);
+    padding: 12px;
+    border-radius: 2px;
+    color: #e84e3d;
+}
+p {
+    margin: 0;
+}
 @keyframes modelFadeIn {
     from{
         transform: translateY(40px);
