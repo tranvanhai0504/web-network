@@ -1,13 +1,16 @@
 html{
     scroll-behavior: smooth;
     font-family: Arial, sans-serif;
+    width: 100%;
+    display: inline-block;
 }
 body{
+    height: 100%;
     margin: 0;
     }
 .header{
     width: 100%;
-    height: 20%;
+    height: 15%;
     background-color: #fff;
     display: flex;
     align-items: center;
@@ -54,7 +57,7 @@ body{
 }
 .footer {
     width: 100%;
-    height: 20%;
+    height: 100px;
     font-size: 12px;
     display: flex;
     justify-content: center;
@@ -62,6 +65,9 @@ body{
     flex-direction: column;
     background-color: #353536;
     color: #fff       
+}
+.footer p{
+    margin-top:10px;
 }
 .header .back{
     color: #de412e;
@@ -356,7 +362,7 @@ ul{
     height: 75%;
     background-color: #d8a853;
     border-radius: 5px;
-    padding: 10px 20px;
+    padding: 10px 20px 30px 20px;
 }
 
 .card .text_area h3{
@@ -386,7 +392,7 @@ ul{
     height: 75%;
     background-color: #d8a853;
     border-radius: 5px;
-    padding: 10px 20px;
+    padding: 10px 20px 30px 20px;
 }
 
 .card2 .text_area h3{
@@ -435,8 +441,6 @@ ul{
     
     }
 }
-
-
 /* b building */
 
 .body-toab {
@@ -478,6 +482,111 @@ ul{
 }
 p {
     margin: 0;
+}
+.body_about{
+    width: 100%;
+    height: 50em;
+}
+.infor_members{
+    width: 100%;
+    padding: 50px 20px;
+    background-color: #90342a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.infor_members .name_team{
+    color: #d8a853;
+    display: inline-block;
+    justify-content: center;
+    border-radius: 15px;
+    border: solid 5px #d8a853;
+    padding: 0 20px;
+    font-size: 35px;
+    line-height: 20px;
+}
+.infor_members .list_members{
+    width: 100%;
+    height: 30em;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.list_members .member_card{
+    position: relative;
+    width: 40%;
+    padding: 20px 10px;
+    background-color:#d8a853;
+    border-radius: 20px;
+}
+.member_card::after{
+    content: "";
+    position: absolute;
+    bottom: 50px;
+    right: 63px;   
+    width: 80%;
+    height: 70px;
+    background-color: #90342a;
+    border-radius:20px;
+}
+.member_card .name_member{
+    padding: 10px 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.member_card .name_member h2{
+    display: inline-block;
+    position: relative;
+}
+.member_card .name_member .avatar{
+    width: 10em;
+    height: 10em;
+    border: solid 5px #90342a;
+    border-radius: 50%;
+    z-index: 2;
+}
+.avatar img{
+    z-index: 1;
+    margin-left: 31px;
+    margin-top: 10px;
+    width:63%;
+    height: 88%;
+}
+.member_card .name_member h2::after{
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 130%;
+    border-radius:5px;
+    left:0;
+    bottom:-5px;
+    background-color: #90342a;
+}
+.member_card .detail_member{
+    position: absolute;
+    top: 110px;
+    z-index: 0;
+    padding: 10px 58px;
+}
+.member_card .detail_member ul{
+    margin: 20px 0;
+    font-size: 30px;
+    background-color: #d8a853;
+}
+.body_about .thank{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    width: 100%; 
+    padding: 20px;
+}
+.body_about .thank p{
+    line-height: 2em;
+    max-width: 900px;
+    text-align: center;
 }
 @keyframes modelFadeIn {
     from{
